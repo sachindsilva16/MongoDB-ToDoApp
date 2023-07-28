@@ -1,0 +1,38 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1>
+      <%= listTitle %>
+    </h1>
+  </div>
+
+  <div class="box">
+
+
+
+    <%newListItems.forEach(function(item){%>
+
+      <!-- This route '/delete' is responsible for deleting items -->
+      <form action="/delete" method="post">
+
+        <div class="item">
+          <input type="checkbox" onChange="this.form.submit()" name="checkbox" value="<%=item._id%>">
+          <p>
+            <%= item.name %>
+          </p>
+        </div>
+        <input type="hidden" name="listName" value="<%=listTitle%>"/>
+      </form>
+
+      <%})%>
+
+
+
+        <!-- This route '/' is responsible for adding items..-->
+        <form class="item" action="/" method="post">
+          <input type="text" name="newItem" placeholder="Add New Item" autocomplete="off">
+          <button type="submit" style="cursor:pointer;" name="list" value=<%=listTitle%>>+</button>
+        </form>
+  </div>
+
+  <%- include("footer") -%>
