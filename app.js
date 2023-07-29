@@ -1,4 +1,5 @@
 // EXPRESS MODULES
+const PORT = process.env.PORT || 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -199,6 +200,6 @@ app.post("/delete", function (req, res) {
 
 // SERVER LISTENING....
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log("Server started on port 3000");
 });
