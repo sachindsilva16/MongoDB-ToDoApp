@@ -24,10 +24,17 @@ h1 {
 }
 
 .item {
+  /* min-height: 70px;
+  display: flex;
+  /* align-items: center; */
+  border-bottom: 1px solid #F1F1F1; */
+
   min-height: 70px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
+  padding: 10px;
 }
 
 .item:last-child {
@@ -40,13 +47,19 @@ input:checked+p {
 }
 
 input[type="checkbox"] {
-  margin: 20px;
+  /* margin: 20px; */
+  margin: 10px;
 }
 
 p {
-  margin: 0;
+  /* margin: 0;
   padding: 20px;
   font-size: 20px;
+  font-weight: 200;
+  color: #00204a; */
+
+  margin: 0;
+  font-size: 16px;
   font-weight: 200;
   color: #00204a;
 }
@@ -59,24 +72,36 @@ form.item {
 button {
   min-height: 50px;
   width: 50px;
+  /* width: 40px; */
   border-radius: 50%;
   border-color: transparent;
   background-color: #A683E3;
   color: #fff;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 20px;
   padding-bottom: 6px;
+  /* padding-bottom: 3px; */
   border-width: 0;
 }
 
 input[type="text"] {
-  text-align: center;
+  /* text-align: center;
   height: 60px;
   top: 10px;
   border: none;
   background: transparent;
   font-size: 20px;
   font-weight: 200;
-  width: 313px;
+  width: 313px; */
+
+  text-align: center;
+  height: 50px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
 }
 
 input[type="text"]:focus {
@@ -94,3 +119,32 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+
+@media (min-width: 601px) {
+  /* Desktop-specific CSS rules go here */
+  .box {
+    max-width: 400px;
+  }
+
+  .item {
+    min-height: 70px;
+  }
+
+  input[type="text"] {
+    width: 313px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
