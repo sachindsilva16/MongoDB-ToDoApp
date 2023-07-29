@@ -11,7 +11,8 @@ h1 {
 }
 
 .box {
-  max-width: 400px;
+  max-width: 700px;
+  width: 500px;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -94,3 +95,47 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+
+
+@media screen and (min-width:601px) {
+  #card {
+    width: 400px;
+    padding: 0px 20px;
+  }
+
+  #heading{
+    width:440px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  #card {
+    width: 480px;
+  }
+
+  #heading{
+    width:480px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+}
+
+#add-item-handler{
+  display:flex;
+  justify-content: center;
+}
+
+
+
