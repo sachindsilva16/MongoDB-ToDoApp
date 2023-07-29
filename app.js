@@ -197,14 +197,6 @@ app.post("/delete", function (req, res) {
 });
 
 
-// GET REQUEST :: '/work' 
-
-app.get("/")
-
-
-
-
-
 // SERVER LISTENING....
 
 app.listen(3000, function () {

@@ -1,2 +1,4 @@
 /node_modules
 .DS_Store
+/views/card.ejs
+script.js
