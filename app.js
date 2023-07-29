@@ -20,7 +20,7 @@ app.use(express.static("public"));
 
 // MONGOOSE CONNECTION LINK :: AND CONNECTING/CREATING DATABASE 'toDoListItems'..
 
-mongoose.connect("mongodb://127.0.0.1:27017/toDoListItems", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://sachindsilva16:Rockerzzdown1@cluster0.0ruhws2.mongodb.net/toDoListItems", { useNewUrlParser: true });
 
 // DEFINE A SCHEMA FOR THE TODO ITEMS
 
